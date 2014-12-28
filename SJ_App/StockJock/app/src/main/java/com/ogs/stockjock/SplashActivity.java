@@ -42,4 +42,8 @@ public class SplashActivity extends ActionBarActivity {
     public void onClick_LogIn(View v){
         startActivity(new Intent(this, LoginActivity.class));
     }
+
+    public void onClick_SignUp(View v){
+        startActivity(new Intent(this, SignUpActivity.class));
+    }
 }

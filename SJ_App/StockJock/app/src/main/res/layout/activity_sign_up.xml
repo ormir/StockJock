@@ -11,36 +11,44 @@
         android:layout_height="wrap_content"
         android:text="Google +"
         android:id="@+id/btnGooglePlus"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp"
-        android:onClick="onClick_SignUpGoogle"/>
+        android:onClick="onClick_SignUpGoogle"
+        android:layout_below="@+id/btnTwitter"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:text="Facebook"
         android:id="@+id/btnFacebook"
-        android:layout_below="@+id/btnGooglePlus"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClick_SignUpFacebook"/>
+        android:onClick="onClick_SignUpFacebook"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:text="Twitter"
         android:id="@+id/btnTwitter"
+        android:onClick="onClick_SignUpTwitter"
         android:layout_below="@+id/btnFacebook"
-        android:layout_alignLeft="@+id/btnFacebook"
-        android:layout_alignStart="@+id/btnFacebook"
-        android:onClick="onClick_SignUpTwitter"/>
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:text="EMail"
         android:id="@+id/btnEmail"
-        android:layout_below="@+id/btnTwitter"
+        android:onClick="onClick_SignUpEmail"
+        android:layout_below="@+id/btnGooglePlus"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign Up"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="onClick_SignUpEmail"/>
+        android:layout_marginTop="36dp"/>
 </RelativeLayout>
